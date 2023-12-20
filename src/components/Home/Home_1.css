@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap');
+
+.home-mainimage{
+    width: 1120px;
+    height: 100%;
+    border: 10px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.home_1-mainimg{
+
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.home_1-head{
+
+    text-align: center;
+    font-size: 55px;
+    font-weight: 900;
+    font-family: 'Onest', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.marquee-container {
+width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: rgb(209, 209, 209); 
+    margin: 0 auto;
+}
+
+.marquee-container::before,
+.marquee-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 400px;  
+    height: 100%;
+    z-index: 2;   
+}
+
+.marquee-container::before {
+    left: -22%;
+    background: linear-gradient(to right, rgb(6, 6, 6), rgba(9, 9, 9, 0));
+}
+
+.marquee-container::after {
+    right: -22%;
+    background: linear-gradient(to left, rgb(4, 4, 4), rgba(255,255,255,0));
+}
+
+.marquee {
+    display: flex;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+}
+
+.category, .separator {
+    padding: 50px 10px;
+    display: inline-block;
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+.separator {
+    font-size: 30px;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

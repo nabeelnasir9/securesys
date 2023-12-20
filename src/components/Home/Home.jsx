@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unknown-property */
 import "../Home/Home.css";
 import Home_1 from "./Home_1";
+import Home_2 from "./Home_2";
 const Home = () => {
   return (
     <div className="Home-wrapper">
@@ -56,6 +57,7 @@ const Home = () => {
         </div>
       </div>
       <Home_1/>
+      <Home_2/>
     </div>
   );
 };
