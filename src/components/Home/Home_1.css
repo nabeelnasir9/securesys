@@ -83,3 +83,17 @@ width: 100%;
         transform: translateX(-50%);
     }
 }
+
+
+@media screen and (max-width: 786px) {
+    .home-mainimage{
+        width: 90%;
+        height: 100%;
+        border: 2px solid black;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
