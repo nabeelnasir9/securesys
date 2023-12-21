@@ -58,7 +58,7 @@ width: 100%;
 .marquee {
     display: flex;
     white-space: nowrap;
-    animation: marquee 20s linear infinite;
+    animation: marquee 15s linear infinite;
 }
 
 .category, .separator {
@@ -95,5 +95,9 @@ width: 100%;
         align-items: center;
         justify-content: center;
         margin: 0 auto;
+    }
+
+    .category,.separator{
+        padding: 23px 10px
     }
 }
